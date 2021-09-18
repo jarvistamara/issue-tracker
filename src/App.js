@@ -11,9 +11,9 @@ function App() {
       <div className='issue-card-container'>
         { addIssue ? <AddIssue /> : <CurrentIssue /> }
         </div>
-      <div>
+      <div className='view-selection'>
         <button className='view-button'>Current Issues</button>
-        <button className='view-button active' >Add Issue</button>
+        <button className='view-button active-btn' >Add Issue</button>
       </div>
     </div>
   );

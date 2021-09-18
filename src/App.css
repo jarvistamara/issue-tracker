@@ -15,6 +15,9 @@ h1 {
   color:rgb(88, 48, 99)
 }
 
+button {
+  cursor: pointer;
+}
 .issue-card-container {
   background-color: rgb(176, 156, 180);
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
@@ -33,4 +36,23 @@ h1 {
     padding: 15px 30px;
     font-size: 16px;
     margin-top: 15px;
+}
+
+.active-btn {
+  border-radius: 5px;
+    background-color: rgb(66, 54, 70);
+    color: #fff;
+    border: none;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.view-selection {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
 }

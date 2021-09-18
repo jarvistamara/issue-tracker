@@ -6,7 +6,7 @@ const AddIssue = () => {
     return (
         <div className='add-issue'>
             <form>
-                <label>Description<input type='text' /></label>
+                <label>Description<input type='text' placeholder='Description of Issue...'/></label>
                 <label>Assign To: 
                     <select name='selectDev' id='selectDev'>
                         <option value='Tamara'>Tamara</option>
