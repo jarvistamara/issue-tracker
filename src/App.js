@@ -8,7 +8,13 @@ function App() {
   return (
     <div className="App">
       <h1>Issue Tracker</h1>
-      { addIssue ? <AddIssue /> : <CurrentIssue /> }
+      <div className='issue-card-container'>
+        { addIssue ? <AddIssue /> : <CurrentIssue /> }
+        </div>
+      <div>
+        <button className='view-button'>Current Issues</button>
+        <button className='view-button active' >Add Issue</button>
+      </div>
     </div>
   );
 }
