@@ -5,6 +5,15 @@ import './App.css';
 
 function App() {
   const [addIssue, setAddIssue] = useState(true)
+
+  const displayCurrentIssue = () => {
+      setAddIssue(!addIssue)
+  }
+
+  const displayAddIssue = () => {
+      setAddIssue(!addIssue)
+  }
+
   return (
     <div className="App">
       <h1>Issue Tracker</h1>
@@ -12,8 +21,8 @@ function App() {
         { addIssue ? <AddIssue /> : <CurrentIssue /> }
         </div>
       <div className='view-selection'>
-        <button className='view-button'>Current Issues</button>
-        <button className='view-button active-btn' >Add Issue</button>
+        <button className='view-button' onClick={() => displayCurrentIssue()}>Current Issues</button>
+        <button className='view-button active-btn' onClick={() => displayAddIssue()}>Add Issue</button>
       </div>
     </div>
   );
