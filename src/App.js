@@ -4,7 +4,7 @@ import CurrentIssue from './components/CurrentIssue/CurrentIssue.js'
 import './App.css';
 
 function App() {
-  const [addIssue, setAddIssue] = useState(false)
+  const [addIssue, setAddIssue] = useState(true)
   return (
     <div className="App">
       <h1>Issue Tracker</h1>
